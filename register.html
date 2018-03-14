@@ -1,0 +1,21 @@
+<!-- 
+This code will be to page that appears when the Register menu item is chosen.
+
+This form will be absorbed by the controller  
+
+Authors: Rick Mercer and Hassanain Jamal
+-->
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+session_start ();
+
+<h3>Register</h3>
+<br>
+
+<form action="controller.php" method="post">
+	<p>
+		Username &nbsp;<input type="text" name="username" pattern=".{4,}" title="at least 4 characters" required><br>
+		<br> Password &nbsp; <input type="password" name="password" pattern=".{6,}" title="at least 6 characters" required><br>
+		<br> <input type='submit' name="register" value='Register'><br>
+	</p>
+</form>

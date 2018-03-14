@@ -1,0 +1,24 @@
+<!-- 
+This code will be to page that appears when the Add Quote menu item is chosen  
+
+This form will be absorbed by the controller  
+
+Authors: Rick Mercer and Hassanain Jamal
+-->
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<h3>Add a Quote</h3>
+
+<div class ='border'>
+	<form action="controller.php" method="post">
+		<span class="labels">&nbsp;Quote:&nbsp;</span>
+		<textarea id="rconer" name="quote" cols="60" rows="5" 
+			placeholder="Enter new quote" required></textarea>
+		<br>
+		<br>
+		<span class="labels">Author:&nbsp;</span><input type="text"
+			name="author" placeholder="Author" required><br>
+		<br> <span class="labels"></span><input type="submit"
+			name="submit" value="Add Quote">
+	</form>
+</div>
